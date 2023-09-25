@@ -15,6 +15,8 @@ import CreateListing from '../pages/Dashboard/CreateListing';
 import TourRequest from '../pages/Dashboard/TourRequest';
 import Admin from '../pages/Admin/admin';
 import Testimonials from '../pages/Admin/Testimonials';
+import Invoices from '../pages/Admin/Invoices';
+import Orders from '../pages/Admin/Orders';
 
 const Calendar = lazy(() => import('../pages/Calendar'));
 const Chart = lazy(() => import('../pages/Chart'));
@@ -27,16 +29,6 @@ const Alerts = lazy(() => import('../pages/UiElements/Alerts'));
 const Buttons = lazy(() => import('../pages/UiElements/Buttons'));
 
 const coreRoutes = [
-  {
-    path: '/create-stories',
-    title: 'Page 2',
-    component: CreateStories,
-  },
-  {
-    path: '/reviews',
-    title: 'Page 3',
-    component: Reviews,
-  },
   {
     path: '/leads',
     title: 'Page 4',
@@ -67,45 +59,21 @@ const coreRoutes = [
     title: 'Page 9',
     component: Stripe,
   },
-  {
-    path: '/messages',
-    title: 'Messages',
-    component: Messages,
-  },
-  {
-    path: '/properties',
-    title: 'Properties',
-    component: Properties,
-  },
-  {
-    path: '/stories',
-    title: 'Stories',
-    component: Stories,
-  },
-  {
-    path: '/package',
-    title: 'Package',
-    component: Package,
-  },
-  {
-    path: '/create-listing',
-    title: 'Create Listing',
-    component: CreateListing,
-  },
-  {
-    path: '/tour-request',
-    title: 'Tour Requests',
-    component: TourRequest,
-  },
-  {
-    path: '/tour-request',
-    title: 'Tour Requests',
-    component: TourRequest,
-  },
+
   {
     path: '/testimonials',
     title: 'Testimonials',
     component: Testimonials,
+  },
+  {
+    path: '/invoices',
+    title: 'Invoices',
+    component: Invoices,
+  },
+  {
+    path: '/orders',
+    title: 'Orders',
+    component: Orders,
   },
 
   {

@@ -1,0 +1,152 @@
+const Invoices = () => {
+  const data = [
+    {
+      invoice_no: '00000001',
+      price: '250',
+      paymentMode: 'PayMob',
+      buyer: 'Shahid Nasir',
+      product_name: 'Story Credit',
+      status: 'Paid',
+      date: '00/00/000',
+    },
+    {
+      invoice_no: '00000001',
+      price: '250',
+      paymentMode: 'PayMob',
+      buyer: 'Shahid Nasir',
+      product_name: 'Story Credit',
+      status: 'Paid',
+      date: '00/00/000',
+    },
+    {
+      invoice_no: '00000001',
+      price: '250',
+      paymentMode: 'PayMob',
+      buyer: 'Shahid Nasir',
+      product_name: 'Story Credit',
+      status: 'Paid',
+      date: '00/00/000',
+    },
+    {
+      invoice_no: '00000001',
+      price: '250',
+      paymentMode: 'PayMob',
+      buyer: 'Shahid Nasir',
+      product_name: 'Story Credit',
+      status: 'Paid',
+      date: '00/00/000',
+    },
+    {
+      invoice_no: '00000001',
+      price: '250',
+      paymentMode: 'PayMob',
+      buyer: 'Shahid Nasir',
+      product_name: 'Story Credit',
+      status: 'Paid',
+      date: '00/00/000',
+    },
+  ];
+  return (
+    <>
+      <h1 className="text-black text-[30.97px] mb-6 font-bold font-['Poppins']">
+        Invoices
+      </h1>{' '}
+      <div className="flex items-center gap-12 flex-wrap mt-20 mb-10">
+        <div className="flex items-center gap-2 flex-wrap">
+          <div className="relative z-20 md:w-[300px] w-[100%]  shadow-lg border dark:bg-form-input">
+            <span className="absolute top-1/2 left-4 z-30 -translate-y-1/2"></span>
+            <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-12 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
+              <option value="">Bulk Action</option>
+            </select>
+          </div>{' '}
+          <button className="bg-[#CAFFDC] hover:bg-green-600 p-3 font-bold text-black rounded-lg">
+            Apply
+          </button>
+        </div>
+        <div className="flex items-center gap-2 flex-wrap">
+          <div className="relative z-20 md:w-[300px] w-[100%]  shadow-lg border dark:bg-form-input">
+            <span className="absolute top-1/2 left-4 z-30 -translate-y-1/2"></span>
+            <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-12 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
+              <option value="">All Dates</option>
+            </select>
+          </div>{' '}
+          <button className="bg-[#CAFFDC] hover:bg-green-600 p-3 font-bold text-black rounded-lg">
+            Filter
+          </button>
+        </div>
+      </div>
+      <div className="overflow-x-auto">
+        <table className="w-full table-auto mt-4 bg-white ">
+          <thead className="rounded-xl">
+            <tr className="bg-white text-black text-left text-[18px] dark:bg-meta-4 ">
+              <th className="min-w-[220px] py-4 px-4 font-semibold   dark:text-white xl:pl-11">
+                <input type="checkbox" className="w-5 h-5" /> Invoice No
+              </th>
+              <th className="min-w-[150px] py-4 px-4 font-semibold  dark:text-white">
+                Price
+              </th>
+              <th className="min-w-[120px] py-4 px-4 font-semibold  dark:text-white">
+                Payment Mode
+              </th>
+              <th className="min-w-[120px] py-4 px-4 font-semibold   dark:text-white">
+                Buyer
+              </th>
+              <th className="min-w-[120px] py-4 px-4 font-semibold   dark:text-white">
+                Product Name
+              </th>
+              <th className="min-w-[120px] py-4 px-4 font-semibold   dark:text-white">
+                Status
+              </th>
+              <th className="min-w-[120px] py-4 px-4 font-semibold   dark:text-white">
+                Date
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((d) => (
+              <tr className="bg-white text-black text-left">
+                <td className="border-b border-[#eee] min-w-[220px] text-left py-4 px-4  dark:border-strokedark  xl:pl-11 ">
+                  <h1 className=" text-[#8E8E93] text-[18.84px]  font-['Poppins']">
+                    <input type="checkbox" className="w-5 h-5" /> {d.invoice_no}
+                  </h1>
+                </td>
+                <td className="border-b border-[#eee] min-w-[150px] py-4 px-4 dark:border-strokedark   ">
+                  <h1 className=" text-[#8E8E93] text-[18.84px]  font-['Poppins']">
+                    {d.price}
+                  </h1>
+                </td>
+                <td className="border-b border-[#eee] min-w-[120px] py-4 px-4 dark:border-strokedark   ">
+                  <h1 className=" text-[#8E8E93] text-[18.84px]  font-['Poppins']">
+                    {d.paymentMode}
+                  </h1>
+                </td>
+                <td className="border-b border-[#eee] min-w-[120px] py-4 px-4 dark:border-strokedark  ">
+                  <h1 className=" text-[#8E8E93] text-[18.84px]  font-['Poppins']">
+                    {d.buyer}
+                  </h1>
+                </td>
+                <td className="border-b border-[#eee] min-w-[120px] py-4 px-4  dark:border-strokedark  ">
+                  <h1 className=" text-[#8E8E93] text-[18.84px]  font-['Poppins']">
+                    {d.product_name}
+                  </h1>
+                </td>
+                <td className="border-b border-[#eee] min-w-[120px] py-4 px-4  dark:border-strokedark  ">
+                  <h1 className=" text-white font-bold bg-main p-2 rounded-full text-center text-[18.84px]   font-['Poppins']">
+                    {d.status}
+                  </h1>
+                </td>
+                <td className="border-b border-[#eee] min-w-[120px] py-4 px-4  dark:border-strokedark  ">
+                  <h1 className=" text-[#8E8E93] text-[18.84px]  font-['Poppins']">
+                    {d.date}
+                  </h1>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  );
+};
+
+export default Invoices;
