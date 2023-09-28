@@ -53,24 +53,24 @@ const Invoices = () => {
       </h1>{' '}
       <div className="flex items-center gap-12 flex-wrap mt-20 mb-10">
         <div className="flex items-center gap-2 flex-wrap">
-          <div className="relative z-20 md:w-[300px] w-[100%]  shadow-lg border dark:bg-form-input">
+          <div className="relative z-20 md:w-[300px] w-[100%]  shadow-lg border bg-white dark:bg-form-input">
             <span className="absolute top-1/2 left-4 z-30 -translate-y-1/2"></span>
             <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-12 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
               <option value="">Bulk Action</option>
             </select>
           </div>{' '}
-          <button className="bg-[#CAFFDC] hover:bg-green-600 p-3 font-bold text-black rounded-lg">
+          <button className="bg-[#CAFFDC] hover:bg-green-600 p-3 font-bold text-black rounded-lg shadow-lg">
             Apply
           </button>
         </div>
         <div className="flex items-center gap-2 flex-wrap">
-          <div className="relative z-20 md:w-[300px] w-[100%]  shadow-lg border dark:bg-form-input">
+          <div className="relative z-20 md:w-[300px] w-[100%]  shadow-lg border bg-white dark:bg-form-input">
             <span className="absolute top-1/2 left-4 z-30 -translate-y-1/2"></span>
             <select className="relative z-20 w-full appearance-none rounded border border-stroke bg-transparent py-3 px-12 outline-none transition focus:border-primary active:border-primary dark:border-form-strokedark dark:bg-form-input">
               <option value="">All Dates</option>
             </select>
           </div>{' '}
-          <button className="bg-[#CAFFDC] hover:bg-green-600 p-3 font-bold text-black rounded-lg">
+          <button className="bg-[#CAFFDC] hover:bg-green-600 p-3 font-bold text-black rounded-lg shadow-lg">
             Filter
           </button>
         </div>
