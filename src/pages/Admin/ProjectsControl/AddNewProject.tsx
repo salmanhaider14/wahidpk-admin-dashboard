@@ -1,12 +1,12 @@
 import { FaCheckSquare } from 'react-icons/fa';
 
-const CreateStories = () => {
+const AddNewProject = () => {
   return (
     <>
       <h1 className="text-black text-[30.97px] mb-6 font-bold font-['Poppins']">
-        Create Listing
+        Create Project
       </h1>
-      <div className="bg-white w-full  min-h-[70vh] shadow-md p-6">
+      <div className="bg-white w-full   shadow-md p-6">
         <h1 className="text-black text-[16.97px] mb-6 font-bold font-['Poppins']">
           Upload Story
         </h1>
@@ -25,12 +25,14 @@ const CreateStories = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2 flex-wrap mt-12">
-          <img src="/storyimg.png" className="w-[250px]" />
-          <img src="/storyimg.png" className="w-[250px]" />
-          <img src="/storyimg.png" className="w-[250px]" />
-          <img src="/storyimg.png" className="w-[250px]" />
-          <img src="/storyimg.png" className="w-[250px]" />
+        <div className="flex justify-center">
+          <div className="flex items-start gap-2 overflow-x-auto mt-10 py-4 ">
+            <img src="/storyimg.png" className="w-[250px] h-[200px]" />
+            <img src="/storyimg.png" className="w-[250px] h-[200px]" />
+            <img src="/storyimg.png" className="w-[250px] h-[200px]" />
+            <img src="/storyimg.png" className="w-[250px] h-[200px]" />
+            <img src="/storyimg.png" className="w-[250px] h-[200px]" />
+          </div>
         </div>
       </div>
       <div className="bg-white w-full   shadow-md p-6 mt-5">
@@ -40,7 +42,7 @@ const CreateStories = () => {
         <div className="flex flex-col gap-6">
           <div>
             <label className="mb-3 font-bold block text-black dark:text-white">
-              Story Title
+              Project Title
             </label>
             <input
               type="text"
@@ -61,11 +63,11 @@ const CreateStories = () => {
           <div className="grid md:grid-cols-3 gap-4 mt-4">
             <div>
               <label className="mb-3 font-bold block text-black dark:text-white">
-                Unity Number
+                Type
               </label>
               <input
                 type="text"
-                placeholder="Street Address"
+                placeholder="Choose"
                 className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
               />
             </div>{' '}
@@ -75,7 +77,7 @@ const CreateStories = () => {
               </label>
               <input
                 type="text"
-                placeholder="Street Address"
+                placeholder="Choose"
                 className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
               />
             </div>{' '}
@@ -85,57 +87,92 @@ const CreateStories = () => {
               </label>
               <input
                 type="text"
-                placeholder="Street Address"
+                placeholder="Choose"
                 className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
               />
             </div>
           </div>
-          <div className="flex justify-between items-center flex-wrap gap-7">
-            <div className="flex items-center gap-4 flex-wrap">
-              {' '}
-              <div>
-                <label className="mb-3 font-bold block text-black dark:text-white">
-                  Label
-                </label>
-                <button className="bg-main w-[200px] h-56px rounded-lg p-3 flex justify-center items-center font-bold text-white">
-                  Rent
-                </button>
-              </div>
-              <div>
-                <label className="mb-3 font-bold block text-black dark:text-white">
-                  Label
-                </label>
-                <button className="bg-white w-[200px] border h-56px rounded-lg p-3 flex justify-center items-center font-bold text-black">
-                  For Sale
-                </button>
-              </div>
-            </div>
-
-            <div className="grow">
-              <label className="mb-3 font-bold block text-main dark:text-white">
-                Enter Price
+          <div className="grid md:grid-cols-3 gap-4 mt-4">
+            <div>
+              <label className="mb-3 font-bold block text-black dark:text-white">
+                Starting Price
               </label>
               <input
                 type="text"
-                placeholder="Enter Price"
+                placeholder="Choose"
+                className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+              />
+            </div>{' '}
+            <div>
+              <label className="mb-3 font-bold block text-black dark:text-white">
+                Ending Price
+              </label>
+              <input
+                type="text"
+                placeholder="Choose"
+                className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+              />
+            </div>{' '}
+            <div>
+              <label className="mb-3 font-bold block text-black dark:text-white">
+                Nearby
+              </label>
+              <input
+                type="text"
+                placeholder="Choose"
                 className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
               />
             </div>
-            <div className="grow">
+          </div>
+          <div className="grid md:grid-cols-3 gap-4 mt-4">
+            <div>
               <label className="mb-3 font-bold block text-black dark:text-white">
-                Property URL
+                Installements Options Available
               </label>
               <input
                 type="text"
-                placeholder=" Property URL"
+                placeholder="Choose"
+                className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+              />
+            </div>{' '}
+            <div>
+              <label className="mb-3 font-bold block text-black dark:text-white">
+                Ready For Posession
+              </label>
+              <input
+                type="text"
+                placeholder="Choose"
+                className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+              />
+            </div>{' '}
+            <div>
+              <label className="mb-3 font-bold block text-black dark:text-white">
+                Built Year
+              </label>
+              <input
+                type="text"
+                placeholder="Choose"
                 className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className=" flex-col  flex flex-wrap gap-4 relative shadow-md rounded-xl p-2 border">
-        <h1 className=" text-zinc-900 md:text-[22.74px] text-[18px] font-semibold font-['Poppins']">
+      <div className="bg-white w-full   shadow-md p-6 mt-5">
+        <h1 className="text-black text-[16.97px] mb-6 font-bold font-['Poppins']">
+          Description
+        </h1>
+        <div>
+          <textarea
+            rows={6}
+            placeholder="Description"
+            className="w-full rounded-lg border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+          ></textarea>
+        </div>
+      </div>
+
+      <div className=" text-black bg-white flex-col  flex flex-wrap gap-4 relative shadow my-4 p-2 border">
+        <h1 className="text-black text-[16.97px]  font-bold font-['Poppins']">
           Featured
         </h1>
         <hr />
@@ -150,7 +187,7 @@ const CreateStories = () => {
             Climate & Energy{' '}
           </h1>
           <h1 className="text-zinc-900 md:text-[20.63px] text-[16px] font-semibold font-['Poppins'] leading-[42.95px]">
-            Plot features
+            Others
           </h1>
           <p className="flex items-center gap-2 md:text-lg text-md">
             <FaCheckSquare className="text-main" size={30} /> Swimming Pools
@@ -256,4 +293,4 @@ const CreateStories = () => {
   );
 };
 
-export default CreateStories;
+export default AddNewProject;

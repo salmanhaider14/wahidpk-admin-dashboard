@@ -1,10 +1,3 @@
-import { Link } from 'react-router-dom';
-import Logo from '../images/logo/logo-icon.svg';
-import DarkModeSwitcher from './DarkModeSwitcher';
-import DropdownMessage from './DropdownMessage';
-import DropdownNotification from './DropdownNotification';
-import DropdownUser from './DropdownUser';
-
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
   setSidebarOpen: (arg0: boolean) => void;
@@ -63,7 +56,7 @@ const Header = (props: {
         <div></div>
 
         <div className="flex items-center gap-3 2xsm:gap-7">
-          <div className="md:flex justify-center items-end gap-8 hidden md:mr-15">
+          {/* <div className="md:flex justify-center items-end gap-8 hidden md:mr-15">
             <Link to={'/'} className="font-semibold text-black">
               Home
             </Link>
@@ -79,17 +72,20 @@ const Header = (props: {
             <Link to={'/'} className="font-semibold text-black">
               Contact
             </Link>
-          </div>
+          </div> */}
           <ul className="flex items-center gap-2 2xsm:gap-4">
+            <button className="bg-[#FFBA0A] w-[170px] flex justify-center hover:bg-yellow-500 items-center font-bold text-white p-2 ">
+              Go To Wahid.pk
+            </button>
+            <button className="bg-main flex w-[150px] justify-center hover:bg-green-600 items-center font-bold text-white p-2  ">
+              Create Listing
+            </button>
             <div className="flex items-center gap-2 mr-7">
               <img src="/propertyimg.png" className="w-10 h-10 rounded-full" />
               <h1 className="text-black text-sm font-semibold font-['Poppins'] leading-[21px]">
                 Themesflat
               </h1>
             </div>
-            <button className="bg-main flex justify-center hover:bg-green-600 items-center font-bold text-white p-2 px-5 rounded-lg">
-              Sell Property
-            </button>
           </ul>
         </div>
       </div>
