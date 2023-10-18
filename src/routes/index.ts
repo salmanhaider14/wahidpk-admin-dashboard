@@ -51,6 +51,20 @@ import Tags from '../pages/Admin/BlogsManagement/Tags';
 import SavedOrDraftBlogs from '../pages/Admin/BlogsManagement/SavedOrDraftBlogs';
 import LeadCenterNotifications from '../pages/Admin/LeadCenterNotifications';
 import MediaManagement from '../pages/Admin/MediaManagement';
+import LeaderBoards from '../pages/Admin/LeaderBoards';
+import Watermark from '../pages/Admin/Watermark';
+import AllUsers from '../pages/UserRoles/AllUsers';
+import NewUser from '../pages/UserRoles/NewUser';
+import MainProfile from '../pages/UserRoles/MainProfile';
+import AdminMessage from '../pages/Admin/AdminMessageControl/AdminMessage';
+import AddAgency from '../pages/Admin/Real Estate/AddAgent';
+import AllAgency from '../pages/Admin/AgencyPackages/AllAgency';
+import AddNewAgencyPackage from '../pages/Admin/AgencyPackages/AddNewAgencyPackage';
+import AllDeveloperPackages from '../pages/Admin/DeveloperPackages/AllDeveloperPackages';
+import AddNewDeveloperPackages from '../pages/Admin/DeveloperPackages/AddNewDeveloperPackages';
+import AllProducts from '../pages/Admin/CreditsControl/AllProducts';
+import AddNewProducts from '../pages/Admin/CreditsControl/AddNewProducts';
+import ReviewsControl from '../pages/Admin/ReviewsControl';
 
 const Calendar = lazy(() => import('../pages/Calendar'));
 const Chart = lazy(() => import('../pages/Chart'));
@@ -271,6 +285,66 @@ const coreRoutes = [
     path: '/media-mng',
     title: 'Media Management',
     component: MediaManagement,
+  },
+  {
+    path: '/leader-boards',
+    title: 'Leader Boards',
+    component: LeaderBoards,
+  },
+  {
+    path: '/watermark',
+    title: 'Watermark',
+    component: Watermark,
+  },
+  {
+    path: '/all-users',
+    title: 'All Users',
+    component: AllUsers,
+  },
+  {
+    path: '/add-users',
+    title: 'Add Users',
+    component: NewUser,
+  },
+  {
+    path: '/main-profile',
+    title: 'Main Profile',
+    component: MainProfile,
+  },
+  {
+    path: '/admin-message',
+    title: 'Admin Message',
+    component: AdminMessage,
+  },
+  {
+    path: '/add-agency-package',
+    title: 'Add Agency Package',
+    component: AddNewAgencyPackage,
+  },
+  {
+    path: '/all-agency-packages',
+    title: 'Add Agency Package',
+    component: AllAgency,
+  },
+  {
+    path: '/add-developer-package',
+    title: 'Add Developer Package',
+    component: AddNewDeveloperPackages,
+  },
+  {
+    path: '/all-products',
+    title: 'All Products',
+    component: AllProducts,
+  },
+  {
+    path: '/add-new-product',
+    title: 'Add New Product',
+    component: AddNewProducts,
+  },
+  {
+    path: '/reviews-control',
+    title: 'Reviews Control',
+    component: ReviewsControl,
   },
   {
     path: '/profile',
