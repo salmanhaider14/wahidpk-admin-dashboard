@@ -22,7 +22,7 @@ const AllDeveloperPackages = () => {
   return (
     <>
       <h1 className="text-black text-[30.97px] mb-6 font-bold font-['Poppins'] mt-4">
-        All Agency Packages
+        All Developer Packages
       </h1>{' '}
       <PaginationExample />
       <div className="overflow-x-auto mt-4">

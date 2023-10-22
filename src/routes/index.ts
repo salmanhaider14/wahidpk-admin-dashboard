@@ -65,6 +65,10 @@ import AddNewDeveloperPackages from '../pages/Admin/DeveloperPackages/AddNewDeve
 import AllProducts from '../pages/Admin/CreditsControl/AllProducts';
 import AddNewProducts from '../pages/Admin/CreditsControl/AddNewProducts';
 import ReviewsControl from '../pages/Admin/ReviewsControl';
+import FloorPlanControl from '../pages/Admin/FloorPlanControl';
+import InstallOptions from '../pages/Admin/InstallOptions';
+import EmailManagement from '../pages/Admin/EmailsManage/EmailManagement';
+import TwoFactor from '../pages/Admin/TwoFactor';
 
 const Calendar = lazy(() => import('../pages/Calendar'));
 const Chart = lazy(() => import('../pages/Chart'));
@@ -332,6 +336,11 @@ const coreRoutes = [
     component: AddNewDeveloperPackages,
   },
   {
+    path: '/all-developer-packages',
+    title: 'Add Developer Package',
+    component: AllDeveloperPackages,
+  },
+  {
     path: '/all-products',
     title: 'All Products',
     component: AllProducts,
@@ -345,6 +354,26 @@ const coreRoutes = [
     path: '/reviews-control',
     title: 'Reviews Control',
     component: ReviewsControl,
+  },
+  {
+    path: '/floor-control',
+    title: 'Floor Control',
+    component: FloorPlanControl,
+  },
+  {
+    path: '/install-options',
+    title: 'Installment Options',
+    component: InstallOptions,
+  },
+  {
+    path: '/email-management',
+    title: 'Email Management',
+    component: EmailManagement,
+  },
+  {
+    path: '/two-factor',
+    title: 'Two Factor',
+    component: TwoFactor,
   },
   {
     path: '/profile',
